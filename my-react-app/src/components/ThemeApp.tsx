@@ -1,0 +1,21 @@
+import { useState } from "react";
+import Child from "./Child";
+import "./theme-app.css";
+
+function ThemeApp() {
+  const [childData, setChildData] = useState("");
+
+  const handleChildData = (colorFromChild: string) => {
+    setChildData(colorFromChild);
+  };
+
+  return (
+    <div>
+      <h2>ThemeApp Component</h2>
+      <div className="box" style={{ background: childData }}></div>
+      <Child onSendData={handleChildData} />
+    </div>
+  );
+}
+
+export default ThemeApp;

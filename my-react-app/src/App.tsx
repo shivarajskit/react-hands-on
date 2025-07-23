@@ -4,6 +4,7 @@ import Counter from './components/Counter';
 import UserList from './components/UserList';
 import TodoApp from './components/TodoApp';
 import WeatherApp from './components/WeatherApp';
+import ThemeApp from './components/ThemeApp';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Link className="hover:underline" to="/users">Users</Link>
         <Link className="hover:underline" to="/todos">Todo App</Link>
         <Link className="hover:underline" to="/weather">Weather App</Link>
+        <Link className="hover:underline" to="/theme">Theme App</Link>
       </nav>
 
       <div className="p-6 max-w-2xl mx-auto">
@@ -31,6 +33,7 @@ function App() {
           <Route path="/users" element={<UserList />} />
           <Route path="/todos" element={<TodoApp />} />
           <Route path="/weather" element={<WeatherApp />} />
+          <Route path="/theme" element={<ThemeApp />} />
           <Route path="*" element={
             <h3 className="text-red-600 text-xl">Page not found</h3>}
           />
