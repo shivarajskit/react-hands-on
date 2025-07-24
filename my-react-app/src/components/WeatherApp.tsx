@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 interface WeatherData {
   name: string;
@@ -11,6 +12,8 @@ function WeatherApp() {
   const [weather, setWeather] = useState<WeatherData | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
+
+  const { t } = useTranslation();
 
   const fetchWeather = async () => {
     if (!city.trim()) return;
@@ -34,32 +37,32 @@ function WeatherApp() {
 
   return (
     <div className="max-w-md mx-auto mt-8 p-6 bg-white rounded shadow">
-      <h2 className="text-xl font-bold mb-4 text-center">🌤️ Weather App</h2>
+      <h2 className="text-xl font-bold mb-4 text-center">{t('weather.title')}</h2>
       <div className="flex gap-2 mb-4">
         <input
           type="text"
           value={city}
           onChange={(e) => setCity(e.target.value)}
-          placeholder="Enter city name"
+          placeholder={t('weather.cityPlaceholder')}
           className="border p-2 flex-grow rounded"
         />
         <button
           onClick={fetchWeather}
           className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
         >
-          Get Weather
+          {t('weather.getWeather')}
         </button>
       </div>
-      {loading && <p className="text-center">Loading...</p>}
+      {loading && <p className="text-center">{t('weather.loading')}</p>}
       {error && <p className="text-center text-red-500">{error}</p>}
       {weather && (
         <div className="text-center">
           <h3 className="text-lg font-semibold mb-2">
-            Weather in {weather.name}
+            {t('weather.weatherIn')} {weather.name}
           </h3>
-          <p>🌡️ Temperature: {weather.main.temp}°C</p>
-          <p>💧 Humidity: {weather.main.humidity}%</p>
-          <p>☁️ Condition: {weather.weather[0].description}</p>
+          <p>🌡️ {t('weather.temperature', {temp: weather.main.temp})}</p>
+          <p>💧 {t('weather.humidity', {humidity: weather.main.humidity})}</p>
+          <p>☁️ {t('weather.condition', {condition: weather.weather[0].description})}</p>
         </div>
       )}
     </div>

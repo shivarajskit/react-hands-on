@@ -1,0 +1,48 @@
+{
+  "pageNotFound": "Page not found",
+  "helloReact": "Hello, React + TypeScript + Vite 🚀",
+  "routerTitle": "React Router Example",
+  "button": {
+    "click_me": "Click Me"
+  },
+  "nav": {
+    "home": "Home",
+    "counter": "Counter",
+    "users": "Users",
+    "todo": "Todo App",
+    "weather": "Weather App",
+    "theme": "Theme App"
+  },
+  "counter": {
+    "count": "Count: {{count}}",
+    "increment": "Increment",
+    "decrement": "Decrement",
+    "reset": "Reset"
+  },
+  "users": {
+    "title": "User List (API Fetch Example)",
+    "loading": "Loading users..."
+  },
+  "todo": {
+    "title": "Todo App 📝",
+    "placeholder": "Enter a new task",
+    "add": "Add Todo",
+    "toggle": "Toggle todo",
+    "delete": "Delete todo",
+    "noTodo": "No todos available"
+  },
+  "weather": {
+    "title": "Weather App 🌤️",
+    "loading": "Loading weather data...",
+    "cityPlaceholder": "Enter city name",
+    "getWeather": "Get Weather",
+    "weatherIn": "Weather in",
+    "humidity": "Humidity: {{humidity}}%",
+    "temperature": "Temperature: {{temp}}°C",
+    "condition": "Condition: {{condition}}"
+  },
+  "childColor": {
+    "title": "Child Component Color Input",
+    "colorPlaceholder": "Enter any color to send to parent"
+  }
+}

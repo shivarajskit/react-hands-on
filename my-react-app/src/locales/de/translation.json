@@ -1,0 +1,48 @@
+{
+  "pageNotFound": "Seite nicht gefunden",
+  "helloReact": "Hallo, React + TypeScript + Vite 🚀",
+  "routerTitle": "React Router Beispiel",
+  "button": {
+    "click_me": "Klick mich"
+  },
+  "nav": {
+    "home": "Startseite",
+    "counter": "Zähler",
+    "users": "Benutzer",
+    "todo": "Todo App",
+    "weather": "Wetter App",
+    "theme": "Theme App"
+  },
+  "counter": {
+    "count": "Zähler: {{count}}",
+    "increment": "Erhöhen",
+    "decrement": "Verringern",
+    "reset": "Zurücksetzen"
+  },
+  "users": {
+    "title": "Benutzerliste (API Beispiel)",
+    "loading": "Benutzer werden geladen..."
+  },
+  "todo": {
+    "title": "Todo App 📝",
+    "placeholder": "Neue Aufgabe eingeben",
+    "add": "Todo hinzufügen",
+    "toggle": "Todo umschalten",
+    "delete": "Todo löschen",
+    "noTodo": "Keine Todos verfügbar"
+  },
+  "weather": {
+    "title": "Wetter App 🌤️",
+    "loading": "Wetterdaten werden geladen...",
+    "cityPlaceholder": "Stadtname eingeben",
+    "getWeather": "Wetter abrufen",
+    "weatherIn": "Wetter in",
+    "humidity": "Luftfeuchtigkeit: {{humidity}}%",
+    "temperature": "Temperatur: {{temp}}°C",
+    "condition": "Bedingung: {{condition}}"
+  },
+  "childColor": {
+    "title": "Farbeingabe der Kindkomponente",
+    "colorPlaceholder": "Geben Sie eine beliebige Farbe ein, um sie an das übergeordnete Element zu senden"
+  }
+}

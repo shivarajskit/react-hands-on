@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 interface User {
   id: number;
@@ -9,6 +10,7 @@ interface User {
 function UserList() {
   const [users, setUsers] = useState<User[]>([]);
   const [loading, setLoading] = useState(true);
+  const { t } = useTranslation();
 
   useEffect(() => {
     fetch('https://jsonplaceholder.typicode.com/users')
@@ -25,9 +27,9 @@ function UserList() {
 
   return (
     <div>
-      <h2>User List (API Fetch Example)</h2>
+      <h2 className='font-bold mb-4'>{t('users.title')}:</h2>
       {loading ? (
-        <p>Loading users...</p>
+        <p>{t('users.loading')}</p>
       ) : (
         <ul>
           {users.map((user) => (
