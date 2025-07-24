@@ -42,15 +42,16 @@ function TodoApp() {
         value={newTodo}
         onChange={e => setNewTodo(e.target.value)}
         placeholder="Enter a new task"
+        className="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring focus:border-blue-500 w-full"
       />
-      <button onClick={addTodo}>Add</button>
+      <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded" onClick={addTodo}>Add</button>
 
       <ul>
         {todos.map(todo => (
           <li key={todo.id} style={{ textDecoration: todo.completed ? 'line-through' : 'none' }}>
             {todo.text}
-            <button onClick={() => toggleTodo(todo.id)}>Toggle</button>
-            <button onClick={() => deleteTodo(todo.id)}>Delete</button>
+            <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded" onClick={() => toggleTodo(todo.id)}>Toggle</button>
+            <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded" onClick={() => deleteTodo(todo.id)}>Delete</button>
           </li>
         ))}
       </ul>

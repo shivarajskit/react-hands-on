@@ -9,9 +9,6 @@ import ThemeApp from './components/ThemeApp';
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-800 font-sans">
-      <div className="bg-green-500">
-      ✅ Tailwind is Working!
-    </div>
       <nav className="bg-blue-600 text-white p-4 flex gap-4">
         <Link className="hover:underline" to="/">Home</Link>
         <Link className="hover:underline" to="/counter">Counter</Link>

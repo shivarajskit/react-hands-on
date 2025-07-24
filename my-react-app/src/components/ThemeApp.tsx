@@ -12,7 +12,7 @@ function ThemeApp() {
   return (
     <div>
       <h2>ThemeApp Component</h2>
-      <div className="box" style={{ background: childData }}></div>
+      <div className="box" style={{ background: childData || 'black' }}></div>
       <Child onSendData={handleChildData} />
     </div>
   );
