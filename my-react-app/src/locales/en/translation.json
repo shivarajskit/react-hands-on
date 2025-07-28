@@ -44,5 +44,8 @@
   "childColor": {
     "title": "Child Component Color Input",
     "colorPlaceholder": "Enter any color to send to parent"
+  },
+  "card": {
+    "title": "Cards"
   }
 }

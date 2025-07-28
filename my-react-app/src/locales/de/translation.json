@@ -44,5 +44,8 @@
   "childColor": {
     "title": "Farbeingabe der Kindkomponente",
     "colorPlaceholder": "Geben Sie eine beliebige Farbe ein, um sie an das übergeordnete Element zu senden"
+  },
+  "card": {
+    "title": "Karten"
   }
 }
