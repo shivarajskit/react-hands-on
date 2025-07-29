@@ -10,6 +10,7 @@ import Modal from './components/Modal';
 import CounterReducer from './components/CounterReducer';
 import UserListUseQuery from './components/UserListUseQuery';
 import UseRef from './components/UseRef';
+import UserFetcher from './components/UserFetcher';
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -33,6 +34,7 @@ function App() {
           <Link className="hover:underline" to="/card">{t("card.title")}</Link>
           <Link className="hover:underline" to="/modal">{t("modal")}</Link>
           <Link className="hover:underline" to="/use-ref">{t("use-ref")}</Link>
+          <Link className="hover:underline" to="/user-fetcher-redux-thunk">{t("user-fetcher-thunk")}</Link>
         </div>
 
         {/* Language selection dropdown */}
@@ -68,6 +70,7 @@ function App() {
           <Route path="/weather" element={<WeatherApp />} />
           <Route path="/theme" element={<ThemeApp />} />
           <Route path="/use-ref" element={<UseRef />} />
+          <Route path="/user-fetcher-redux-thunk" element={<UserFetcher />} />
           <Route
             path="/card"
             element={
